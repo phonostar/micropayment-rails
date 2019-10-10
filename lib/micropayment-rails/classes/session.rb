@@ -1,7 +1,7 @@
 module Micropayment
   class Session < Micropayment::Base
 
-    VALID_ATTRIBUTES  = [:sessionId, :customerId, :status, :expire, :statusDetail, :project, :projectCampaign, :account, :webmasterCampaign, :amount, :currency, :title, :payText, :payAmount, :openAmount, :ip, :freeParams, :creditorId, :mandateRef, :payDate]
+    VALID_ATTRIBUTES  = [:sessionId, :customerId, :status, :expire, :statusDetail, :project, :projectCampaign, :account, :webmasterCampaign, :amount, :currency, :title, :payText, :payAmount, :openAmount, :ip, :freeParams, :creditorId, :mandateRef, :mandateRecur, :payDate]
     IDENTIFIER        = :sessionId
     FIND_METHOD       = :sessionGet
     CREATE_METHOD     = :sessionCreate
